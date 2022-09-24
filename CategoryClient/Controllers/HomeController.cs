@@ -91,7 +91,6 @@ namespace CategoryClient.Controllers
         {
             if (ModelState.IsValid)
             {
-                //category.CreatedDateTime = DateTime.Now;
                 using (var httpClient = new HttpClient())
                 {
                     httpClient.BaseAddress = new Uri("https://cdub-api-categories.azurewebsites.net/");
